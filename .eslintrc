@@ -6,7 +6,9 @@ extends:
 - eslint:recommended
 globals:
   React: readonly
-parserOptions:
+plugins
+  prettier
+parserOptions
   ecmaFeatures:
     jsx: true
   ecmaVersion: 10
