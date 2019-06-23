@@ -17,7 +17,9 @@ rules:
   # If rules are set to disable the one in *:recommended, please elaborate the reason
 
   # Group - Best Practices
-  indent: ["error", 2, 2]
+  indent: 
+    - "error"
+    - 2
   no-async-promise-executor: error
   no-await-in-loop: error
   no-console:
@@ -61,9 +63,7 @@ rules:
   no-lone-blocks: error
   no-magic-numbers:
   - error
-  - ignore:
-    - 0
-    - 1
+  - ignoreArrayIndexes: true
   no-multi-spaces:
   - error
   - ignoreEOLComments: true
