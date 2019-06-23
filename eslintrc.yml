@@ -4,11 +4,11 @@ env:
   jest: true
 extends:
 - eslint:recommended
+plugins:
+  prettier
 globals:
   React: readonly
-plugins
-  prettier
-parserOptions
+parserOptions:
   ecmaFeatures:
     jsx: true
   ecmaVersion: 10
@@ -65,7 +65,9 @@ rules:
   no-lone-blocks: error
   no-magic-numbers:
   - error
-  - ignoreArrayIndexes: true
+  - ignore:
+    - 0
+    - 1
   no-multi-spaces:
   - error
   - ignoreEOLComments: true
